@@ -1,0 +1,18 @@
+{% macro article(body, title, date, url="") %}
+  <article>
+    <header>
+      <time dateTime="{{ date.toISOString() }}">
+        {{ date.getMonth() + 1 }}/{{ date.getDate() }}/{{ date.getFullYear() }}
+      </time>
+      {% if url === "" %}
+        <h1>{{ title }}</h1>
+      {% else %}
+        <h1>
+          <a href=" {{url}} ">{{ title }}</a>
+        </h1>
+      {% endif %}
+    </header>
+
+    {{ body | safe}}
+  </article>
+{% endmacro %}

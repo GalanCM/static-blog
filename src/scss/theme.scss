@@ -1,0 +1,23 @@
+@import "reset.scss";
+
+:root {
+  font-family: Lato, Arial, sans-serif;
+}
+
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.site-header {
+  height: 50px;
+  background-color: #001f3d;
+  color: white;
+  border-bottom: 0.75vw solid #820a0a;
+}

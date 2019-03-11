@@ -1,0 +1,12 @@
+---
+layout: base.njk
+---
+{% from "article.njk" import article %}
+
+{% include "header.njk" %}
+
+<main>
+  {% for post in collections.post | reverse %}
+      {{ article(post.templateContent, post.data.title, post.date, url=post.url) }}
+  {% endfor %}
+</article>
