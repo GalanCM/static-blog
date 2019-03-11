@@ -1,9 +1,9 @@
 ---
-layout: base.njk
+layout: layouts/base.njk
 ---
-{% from "article.njk" import article %}
+{% from "macros/article.njk" import article %}
 
-{% include "header.njk" %}
+{% include "templates/header.njk" %}
 
 <main>
   {% for post in collections.post | reverse %}
