@@ -22,5 +22,8 @@
     "> 1%",
     "maintained node versions",
     "not dead"
-  ]
+  ],
+  "dependencies": {
+    "netlify-cms": "^2.6.1"
+  }
 }
