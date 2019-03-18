@@ -26,4 +26,4 @@ collections:
           widget: "string",
           default: "njk, md",
         }
-      # - {label: "Body", name: "body", widget: "markdown"}
+      - { label: "Body", name: "body", widget: "markdown" }
