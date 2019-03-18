@@ -3,7 +3,10 @@ layout: layouts/base.njk
 ---
 {% from "macros/article.njk" import article %}
 
-{% include "templates/header.njk" %}
+<section id="intro">
+  <div class="caret">❭</div>
+  <div>{{content | safe}}</div>
+</section>
 
 <main>
   {% for post in collections.post | reverse %}

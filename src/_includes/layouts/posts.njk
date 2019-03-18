@@ -4,8 +4,6 @@ layout: layouts/base.njk
 
 {% from "macros/article.njk" import article %}
 
-{% include "templates/header.njk" %}
-
 <main>
   {{ article(content, title, page.date) }}
 </main>
