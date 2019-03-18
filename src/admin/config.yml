@@ -24,8 +24,7 @@ collections:
           label: "Layout",
           name: "layout",
           widget: "select",
-          options:
-            - { label: "Post", value: "layouts/posts.njk"},
+          options: { label: "Post", value: "layouts/posts.njk" },
           default: "layouts/posts.njk",
         }
       - { label: "Body", name: "body", widget: "markdown" }
