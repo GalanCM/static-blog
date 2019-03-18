@@ -18,6 +18,7 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
+        field: { label: "Tag", name: "tag_name", widget: "string" }
       - label: "Template Engine"
         name: "templateEngineOverride"
         widget: "hidden"
