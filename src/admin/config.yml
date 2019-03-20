@@ -1,7 +1,9 @@
 backend:
   name: git-gateway
+  repo: GalanCM/static-blog
   branch: cms
-publish_mode: editorial_workflow
+
+# publish_mode: editorial_workflow
 media_folder: "src/images"
 public_folder: "/images/uploads"
 
