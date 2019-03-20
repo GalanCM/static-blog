@@ -15,22 +15,14 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date Published", name: "date", widget: "date" }
+      - { label: "Date Modified", name: "modified", widget: "date" }
       - { label: "Tags", name: "tags", widget: "list", default: ["post"] }
-      - {
-          label: "Template Engine",
-          name: "templateEngineOverride",
-          widget: "hidden",
-          default: "njk, md",
-        }
       - {
           label: "Layout",
           name: "layout",
-          widget: "select",
-          options:
-            [
-              { label: "Post", value: "layouts/posts.njk" },
-              { label: "Home", value: "layouts/home.njk" },
-            ],
+          widget: "hidden",
+          options: [{ label: "Post", value: "layouts/posts.njk" }],
           default: "layouts/posts.njk",
         }
       - { label: "Body", name: "body", widget: "markdown" }
